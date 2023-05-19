@@ -1,5 +1,5 @@
 ---
-name: V Community Sharers
+name: V Community
 avatar: /static/images/avatar.png
 occupation: Professor of AI Science
 company: AI AIGC Student

@@ -1,0 +1,23 @@
+---
+title: 'Container Web'
+date: 2023-08-28T13:32:14Z
+lastmod: '2023-08-28'
+tags: ['WEB', 'docker']
+draft: false
+summary: 'Container Web'
+---
+
+## 启动一个容器作为 web 网页进行浏览
+
+- [docker-ubuntu-vnc-desktop](https://github.com/fcwu/docker-ubuntu-vnc-desktop)
+
+```shell
+docker run -d \
+-p 6080:80 \
+-p 5900:5900 \
+-e VNC_PASSWORD=webweb \
+-v /dev/shm:/dev/shm \
+dorowu/ubuntu-desktop-lxde-vnc
+```
+
+- 开启端口 6080，访问`http://x.x.x.x:6080`接口
